@@ -1,9 +1,14 @@
+#!/usr/bin/env node
+var fs = require('fs');
+var infile = "index.html";
+var data = fs.readFile(infile);
+
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World2!');
+  response.send('Hello World2!::'+ data);
 });
 
 var port = process.env.PORT || 5000;
