@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var fs = require('fs');
 var infile = "index.html";
-var data = fs.readFile(infile);
+var data = fs.readFileSync(infile);
 
 var express = require('express');
 
