@@ -24,21 +24,22 @@
         .linediv-r {
          border-left: 1px white solid;
         }
+      }
       /* Landscape phones and down*/
-      @media (max-width:480px) {
+      @media (max-width: 480px) {
        .copy {
          padding: 2.5% 10%;
        }
         .linediv-l {
-         border-right:1px white solid;
+         border-bottom:1px white solid;
         }
         .linediv-r {
-         border-left: 1px white solid;
+         border-top: 1px white solid;
         } 
       }
       
       /* All form factors */        
-      /* Main body and HEadings*/
+      /* Main body and Headings*/
       body{
       	font-family: 'Open Sans',HElvetica,Arial,sans-serif;
       }
@@ -63,16 +64,16 @@
         padding: 2% 0%;
       }
       .actions {
-        background-color: #343434
+        background-color: #343434;
         padding: 3% 0%;
       }
       .video, .thermometer, .order, .social, statistics {
-        border:1px dotted;
         text-align: center;
       }
       .statisctics h3, .statistics p {
         color: white;
       }
+
         /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
@@ -114,7 +115,7 @@
       	      <li><a href="#about">About</a></li>
       	      <li><a href="#contact">Contact</a></li>
       	    </ul>
-      	  </div><!-- nav collapse-->
+      	  </div><!-- n/.av collapse-->
       	</div>
       </div>
     </div>
@@ -140,19 +141,19 @@
         <div class="span5 actions">
           <div class="span8 offset2">
             <div class="statistics">
-              <div class="span 4">
+              <div class="span4">
                 <!-- linediv -l giving dividing lines a look dif in hor and
               ver lay, illustrating media queries-->
                 <div class="linediv-l">
                   <h3>1000</h3> <p>backers</p>
                 </div>
               </div>
-	      <div class="span 4">
+	      <div class="span4">
                 <div class="linediv-c">
                   <h3>6000</h3> <p>of $10,000</p>
                 </div>
               </div>        
-	      <div class="span 4">
+	      <div class="span4">
                 <div class="linediv-r">
                   <h3>10</h3> <p>days left</p>
                 </div>
@@ -175,64 +176,58 @@
     	    <button class="btn btn-twitter"><i class="icon-twitter"></i>| Twitter</button>                
 	    <button class="btn btn-facebook"><i class="icon-facebook"></i>| Facebook</button>                
           </div>
-        </div> <!-- sapn 5 actions-->                
+        </div> <!-- span 5 actions-->                
       </div> <!-- row fluid pitch -->
               
       <!-- marketting part copy begins -->	
-        <div class="span6 blank">
-          Blank
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+	  <img class="img-polaroid" scr="http://placehold.it/480x300">
         </div>
-        <div class="span4 about">
-          About
+	<div class="span5 copy">
+	  <p>
+	  </p>
         </div>
       </div>
-      <div class="row heading">
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+          </p>
+        </div>
+	<div class="span5 asset">
+	  <img class="img-polaroid" scr="http://placehold.it/480x300">
+        </div>
+      </div>
+ 	
+      <!-- For the FAQ; bit of js, jquery and bootstrap.js as dependencies-->
+      <div class="row-fluid faq">
+      	  <div class="span10 offset1">
+      	    <h3>FAQ</h3>
+      	    <div class="accordion" id="accordion2">
+      	      <div class="accordion-group">
+      	        <div class="accordion-heading">
+   		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+      	            What does FAQ stand for?
+      	          </a>
+      	        </div>
+      	        <div id="collapse Two" class="accordion-body collapse">
+      	          <div class="accordion-inner">
+      	            A question which is commonly asked by users
+      	          </div>
+      	        </div>  
+      	      </div> <!-- accordion group -->
+      	    </div>
+      	  </div> 	
+      </div> <!-- fluid faq-->	
+      <div class="row-fluid footer">
         <div class="span12">
-          <h1>Bitstarter Title</h1>
+          <p> This work is licensed under the <a
+          href="http://creativecommons.org/licenses/by-sa/3.0"/>CC By -SA 3.0
+          </a>,other stuff that should be put here </p>
         </div>
       </div>
-      <div class="row subheading">
-        <div class="span12">
-          <p class="lead">This is my first bitstarter project.</p>
-        </div>
-      </div>
-      <div class="row pitch">
-        <div class="span6 video">
-          Video
-        </div>
-        <div class="span6">
-          <div class="thermometer">
-            Thermometer
-          </div>
-          <div class="order">
-            Order
-          </div>
-          <div class="social">
-            Social
-          </div>
-        </div>
-      </div>
-      <div class="row section1">
-        <div class="span12">
-          Marketting Section 1
-        </div>
-      </div>
-      <div class="row section2">
-        <div class="span12">
-          Marketting Section 2
-        </div>
-      </div>
-      <div class="row faq">
-        <div class="span12">
-          FAQ
-        </div>
-      </div>
-      <div class="row footer">
-        <div class="span12">
-          Footer
-        </div>
-      </div>
-    </div>
+    </div> <!-- container -->	
   </body>
 </html>
            
